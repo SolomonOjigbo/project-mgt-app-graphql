@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from './components/Header';
+
 import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
+import Home from './pages/Home';
 
 const cache = new InMemoryCache({
   typePolicies: {
@@ -36,6 +38,7 @@ function App() {
       
       <h1>Project Management App</h1>
     </div>
+    <Home />
     </ApolloProvider>
     
     </>
